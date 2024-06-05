@@ -56,6 +56,19 @@ samtools index "$bam_file"
 ## Counts with HTSeq
 
 ## Run Majiq with STAR output
+
+Prepare the settings file
+```
+ #cat settings_micol.ini 
+[info]
+bamdirs=/home/skgtrk2/Scratch/mito/RNASeq/star_micol
+sjdirs=/sj
+genome=mm10
+strandness=None
+[experiments]
+case=EVELINA_S6Aligned.sortedByCoord.out,FRANCE_S5Aligned.sortedByCoord.out,BRISTOL_S3Aligned.sortedByCoord.out,TURKEY_S4Aligned.sortedByCoord.out,ROB2_S2Aligned.sortedByCoord.out,ROB1_S1Aligned.sortedByCoord.out
+control=LB_S10Aligned.sortedByCoord.out,SIA7_S11Aligned.sortedByCoord.out,C5_S9Aligned.sortedByCoord.out,C1_S7Aligned.sortedByCoord.out,C2_S8Aligned.sortedByCoord.out
+```
 ```
 
 majiq build -c settings_micol.ini /home/skgtrk2/Scratch/mito/RNASeq/Ref/Homo_sapiens.GRCh38.111.NDUFA4_NDUFA4L2.gff3 -o out_micol -j 1
