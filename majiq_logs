@@ -1,3 +1,102 @@
+BUILD
+/lustre/home/skgtrk2/majiq/lib/python3.9/site-packages/rna_majiq/src/config.py:91: UserWarning: sjdirs parameter provided but --incremental was not set -- directories will not be used
+  warnings.warn(
+2024-06-05 20:34:50,524 (PID:20340) - INFO - Majiq Build v2.5.6.dev1+g8423f68
+2024-06-05 20:34:50,525 (PID:20340) - INFO - Command: /lustre/home/skgtrk2/majiq/bin/majiq build -c settings_micol.ini /home/skgtrk2/Scratch/mito/RNASeq/Ref/Homo_sapiens.GRCh38.111.NDUFA4_NDUFA4L2.gff3 -o out_micol -j 1
+2024-06-05 20:35:00,506 (PID:20340) - INFO - ╔═══════════════════════════════════════════════════════════════╗
+2024-06-05 20:35:00,507 (PID:20340) - INFO - ╠╡ ACADEMIC License applied                                     ║
+2024-06-05 20:35:00,507 (PID:20340) - INFO - ║  Name: Official Majiq Academic-only License                   ║
+2024-06-05 20:35:00,507 (PID:20340) - INFO - ║  File: majiq_license_academic_official.lic                    ║
+2024-06-05 20:35:00,507 (PID:20340) - INFO - ║  Expiration Date: Never                                       ║
+2024-06-05 20:35:00,507 (PID:20340) - INFO - ║                                                               ║
+2024-06-05 20:35:00,508 (PID:20340) - INFO - ╠╡ The academic license is for non-commercial purposes by       ║
+2024-06-05 20:35:00,508 (PID:20340) - INFO - ╠╡ individuals at an academic or not for profit institution.    ║
+2024-06-05 20:35:00,508 (PID:20340) - INFO - ╚═══════════════════════════════════════════════════════════════╝
+2024-06-05 20:38:35,604 (PID:20340) - INFO - Parsing GFF3
+2024-06-05 20:38:35,651 (PID:20340) - INFO - Adding Transcript Exons
+2024-06-05 20:38:35,687 (PID:20340) - INFO - Reading bamfiles
+2024-06-05 20:38:35,688 (PID:20340) - INFO - Group case, number of experiments: 6, minexperiments: 3
+2024-06-05 20:38:35,688 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/EVELINA_S6Aligned.sortedByCoord.out.bam
+2024-06-05 20:42:31,533 (PID:20340) - INFO - Detect Intron retention EVELINA_S6Aligned.sortedByCoord.out
+2024-06-05 20:46:22,795 (PID:20340) - INFO - Done Reading file EVELINA_S6Aligned.sortedByCoord.out
+2024-06-05 20:46:23,501 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/FRANCE_S5Aligned.sortedByCoord.out.bam
+2024-06-05 20:50:16,729 (PID:20340) - INFO - Detect Intron retention FRANCE_S5Aligned.sortedByCoord.out
+2024-06-05 20:54:05,423 (PID:20340) - INFO - Done Reading file FRANCE_S5Aligned.sortedByCoord.out
+2024-06-05 20:54:06,221 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/BRISTOL_S3Aligned.sortedByCoord.out.bam
+2024-06-05 20:57:49,575 (PID:20340) - INFO - Detect Intron retention BRISTOL_S3Aligned.sortedByCoord.out
+2024-06-05 21:01:27,615 (PID:20340) - INFO - Done Reading file BRISTOL_S3Aligned.sortedByCoord.out
+2024-06-05 21:01:28,171 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/TURKEY_S4Aligned.sortedByCoord.out.bam
+2024-06-05 21:04:44,751 (PID:20340) - INFO - Detect Intron retention TURKEY_S4Aligned.sortedByCoord.out
+2024-06-05 21:07:58,196 (PID:20340) - INFO - Done Reading file TURKEY_S4Aligned.sortedByCoord.out
+2024-06-05 21:07:58,813 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/ROB2_S2Aligned.sortedByCoord.out.bam
+2024-06-05 21:12:29,973 (PID:20340) - INFO - Detect Intron retention ROB2_S2Aligned.sortedByCoord.out
+2024-06-05 21:17:05,276 (PID:20340) - INFO - Done Reading file ROB2_S2Aligned.sortedByCoord.out
+2024-06-05 21:17:05,804 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/ROB1_S1Aligned.sortedByCoord.out.bam
+2024-06-05 21:21:01,824 (PID:20340) - INFO - Detect Intron retention ROB1_S1Aligned.sortedByCoord.out
+2024-06-05 21:24:51,560 (PID:20340) - INFO - Done Reading file ROB1_S1Aligned.sortedByCoord.out
+2024-06-05 21:24:52,224 (PID:20340) - INFO - Group control, number of experiments: 5, minexperiments: 3
+2024-06-05 21:24:52,262 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/LB_S10Aligned.sortedByCoord.out.bam
+2024-06-05 21:28:29,488 (PID:20340) - INFO - Detect Intron retention LB_S10Aligned.sortedByCoord.out
+2024-06-05 21:32:05,974 (PID:20340) - INFO - Done Reading file LB_S10Aligned.sortedByCoord.out
+2024-06-05 21:32:07,210 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/SIA7_S11Aligned.sortedByCoord.out.bam
+2024-06-05 21:35:00,700 (PID:20340) - INFO - Detect Intron retention SIA7_S11Aligned.sortedByCoord.out
+2024-06-05 21:37:50,761 (PID:20340) - INFO - Done Reading file SIA7_S11Aligned.sortedByCoord.out
+2024-06-05 21:37:51,087 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/C5_S9Aligned.sortedByCoord.out.bam
+2024-06-05 21:40:40,292 (PID:20340) - INFO - Detect Intron retention C5_S9Aligned.sortedByCoord.out
+2024-06-05 21:43:25,789 (PID:20340) - INFO - Done Reading file C5_S9Aligned.sortedByCoord.out
+2024-06-05 21:43:26,157 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/C1_S7Aligned.sortedByCoord.out.bam
+2024-06-05 21:47:05,207 (PID:20340) - INFO - Detect Intron retention C1_S7Aligned.sortedByCoord.out
+2024-06-05 21:50:36,581 (PID:20340) - INFO - Done Reading file C1_S7Aligned.sortedByCoord.out
+2024-06-05 21:50:37,132 (PID:20340) - INFO - Reading bam file /home/skgtrk2/Scratch/mito/RNASeq/star_micol/C2_S8Aligned.sortedByCoord.out.bam
+2024-06-05 21:54:27,285 (PID:20340) - INFO - Detect Intron retention C2_S8Aligned.sortedByCoord.out
+2024-06-05 21:58:17,878 (PID:20340) - INFO - Done Reading file C2_S8Aligned.sortedByCoord.out
+2024-06-05 21:58:18,468 (PID:20340) - INFO - Detecting LSVs ngenes: 3 
+2024-06-05 21:58:18,643 (PID:20340) - INFO - 7 LSV found
+2024-06-05 21:58:18,643 (PID:20340) - INFO - DUMP file b'EVELINA_S6Aligned.sortedByCoord.out'
+2024-06-05 21:58:20,574 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:20,805 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:20,851 (PID:20340) - INFO - EVELINA_S6Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:20,851 (PID:20340) - INFO - DUMP file b'FRANCE_S5Aligned.sortedByCoord.out'
+2024-06-05 21:58:23,584 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:24,180 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:24,185 (PID:20340) - INFO - FRANCE_S5Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:24,186 (PID:20340) - INFO - DUMP file b'BRISTOL_S3Aligned.sortedByCoord.out'
+2024-06-05 21:58:25,786 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:26,127 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:26,148 (PID:20340) - INFO - BRISTOL_S3Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:26,149 (PID:20340) - INFO - DUMP file b'TURKEY_S4Aligned.sortedByCoord.out'
+2024-06-05 21:58:27,715 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:28,236 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:28,256 (PID:20340) - INFO - TURKEY_S4Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:28,257 (PID:20340) - INFO - DUMP file b'ROB2_S2Aligned.sortedByCoord.out'
+2024-06-05 21:58:29,869 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:30,127 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:30,130 (PID:20340) - INFO - ROB2_S2Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:30,130 (PID:20340) - INFO - DUMP file b'ROB1_S1Aligned.sortedByCoord.out'
+2024-06-05 21:58:32,227 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:32,617 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:32,634 (PID:20340) - INFO - ROB1_S1Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:32,635 (PID:20340) - INFO - DUMP file b'LB_S10Aligned.sortedByCoord.out'
+2024-06-05 21:58:34,353 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:34,826 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:34,914 (PID:20340) - INFO - LB_S10Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:34,914 (PID:20340) - INFO - DUMP file b'SIA7_S11Aligned.sortedByCoord.out'
+2024-06-05 21:58:36,235 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:36,375 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:36,401 (PID:20340) - INFO - SIA7_S11Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:36,402 (PID:20340) - INFO - DUMP file b'C5_S9Aligned.sortedByCoord.out'
+2024-06-05 21:58:38,406 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:38,580 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:38,602 (PID:20340) - INFO - C5_S9Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:38,602 (PID:20340) - INFO - DUMP file b'C1_S7Aligned.sortedByCoord.out'
+2024-06-05 21:58:39,883 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:39,952 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:39,956 (PID:20340) - INFO - C1_S7Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:39,957 (PID:20340) - INFO - DUMP file b'C2_S8Aligned.sortedByCoord.out'
+2024-06-05 21:58:41,183 (PID:20340) - INFO - Create majiq file
+2024-06-05 21:58:41,234 (PID:20340) - INFO - Dump majiq file
+2024-06-05 21:58:41,261 (PID:20340) - INFO - C2_S8Aligned.sortedByCoord.out: 6 LSVs
+2024-06-05 21:58:43,728 (PID:20340) - INFO - MAJIQ Builder is ended successfully!
 
 DELTAPSI
 
