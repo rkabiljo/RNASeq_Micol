@@ -1,0 +1,34 @@
+
+DELTAPSI
+
+2024-06-05 22:12:37,172 (PID:25914) - INFO - Majiq deltapsi v2.5.6.dev1+g8423f68
+2024-06-05 22:12:37,172 (PID:25914) - INFO - Command: /lustre/home/skgtrk2/majiq/bin/majiq deltapsi -o deltapsiOut -n case control -grp1 out_micol/EVELINA_S6Aligned.sortedByCoord.out.majiq out_micol/FRANCE_S5Aligned.sortedByCoord.out.majiq out_micol/BRISTOL_S3Aligned.sortedByCoord.out.majiq out_micol/TURKEY_S4Aligned.sortedByCoord.out.majiq out_micol/ROB2_S2Aligned.sortedByCoord.out.majiq out_micol/ROB1_S1Aligned.sortedByCoord.out.majiq -grp2 out_micol/LB_S10Aligned.sortedByCoord.out.majiq out_micol/SIA7_S11Aligned.sortedByCoord.out.majiq out_micol/C5_S9Aligned.sortedByCoord.out.majiq out_micol/C1_S7Aligned.sortedByCoord.out.majiq out_micol/C2_S8Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,227 (PID:25914) - INFO - ╔═══════════════════════════════════════════════════════════════╗
+2024-06-05 22:12:37,228 (PID:25914) - INFO - ╠╡ ACADEMIC License applied                                     ║
+2024-06-05 22:12:37,228 (PID:25914) - INFO - ║  Name: Official Majiq Academic-only License                   ║
+2024-06-05 22:12:37,229 (PID:25914) - INFO - ║  File: majiq_license_academic_official.lic                    ║
+2024-06-05 22:12:37,229 (PID:25914) - INFO - ║  Expiration Date: Never                                       ║
+2024-06-05 22:12:37,229 (PID:25914) - INFO - ║                                                               ║
+2024-06-05 22:12:37,229 (PID:25914) - INFO - ╠╡ The academic license is for non-commercial purposes by       ║
+2024-06-05 22:12:37,230 (PID:25914) - INFO - ╠╡ individuals at an academic or not for profit institution.    ║
+2024-06-05 22:12:37,230 (PID:25914) - INFO - ╚═══════════════════════════════════════════════════════════════╝
+2024-06-05 22:12:37,230 (PID:25914) - INFO - GROUP1: ['out_micol/EVELINA_S6Aligned.sortedByCoord.out.majiq', 'out_micol/FRANCE_S5Aligned.sortedByCoord.out.majiq', 'out_micol/BRISTOL_S3Aligned.sortedByCoord.out.majiq', 'out_micol/TURKEY_S4Aligned.sortedByCoord.out.majiq', 'out_micol/ROB2_S2Aligned.sortedByCoord.out.majiq', 'out_micol/ROB1_S1Aligned.sortedByCoord.out.majiq']
+2024-06-05 22:12:37,231 (PID:25914) - INFO - GROUP2: ['out_micol/LB_S10Aligned.sortedByCoord.out.majiq', 'out_micol/SIA7_S11Aligned.sortedByCoord.out.majiq', 'out_micol/C5_S9Aligned.sortedByCoord.out.majiq', 'out_micol/C1_S7Aligned.sortedByCoord.out.majiq', 'out_micol/C2_S8Aligned.sortedByCoord.out.majiq']
+2024-06-05 22:12:37,231 (PID:25914) - INFO - Parsing file: out_micol/EVELINA_S6Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,234 (PID:25914) - INFO - Parsing file: out_micol/FRANCE_S5Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,236 (PID:25914) - INFO - Parsing file: out_micol/BRISTOL_S3Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,238 (PID:25914) - INFO - Parsing file: out_micol/TURKEY_S4Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,240 (PID:25914) - INFO - Parsing file: out_micol/ROB2_S2Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,242 (PID:25914) - INFO - Parsing file: out_micol/ROB1_S1Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,338 (PID:25914) - INFO - Group case: 6 LSVs
+2024-06-05 22:12:37,339 (PID:25914) - INFO - Parsing file: out_micol/LB_S10Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,340 (PID:25914) - INFO - Parsing file: out_micol/SIA7_S11Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,342 (PID:25914) - INFO - Parsing file: out_micol/C5_S9Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,344 (PID:25914) - INFO - Parsing file: out_micol/C1_S7Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,346 (PID:25914) - INFO - Parsing file: out_micol/C2_S8Aligned.sortedByCoord.out.majiq
+2024-06-05 22:12:37,348 (PID:25914) - INFO - Group control: 6 LSVs
+2024-06-05 22:12:37,349 (PID:25914) - INFO - Number quantifiable LSVs: 5
+2024-06-05 22:12:37,349 (PID:25914) - INFO - Calculating prior matrix...
+2024-06-05 22:12:37,561 (PID:25914) - INFO - Start Computing DeltaPSI
+2024-06-05 22:12:37,573 (PID:25914) - INFO - Computation done, saving results....
+2024-06-05 22:12:44,946 (PID:25914) - INFO - DeltaPSI calculation for case-control ended successfully! Result can be found at deltapsiOut
