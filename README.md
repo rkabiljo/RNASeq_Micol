@@ -57,6 +57,9 @@ samtools index "$bam_file"
 
 ## Run Majiq with STAR output
 ```
+
+majiq build -c settings_micol.ini /home/skgtrk2/Scratch/mito/RNASeq/Ref/Homo_sapiens.GRCh38.111.NDUFA4_NDUFA4L2.gff3 -o out_micol -j 1
+
 majiq deltapsi -o deltapsiOut -n case control -grp1 out_micol/EVELINA_S6Aligned.sortedByCoord.out.majiq out_micol/FRANCE_S5Aligned.sortedByCoord.out.majiq out_micol/BRISTOL_S3Aligned.sortedByCoord.out.majiq out_micol/TURKEY_S4Aligned.sortedByCoord.out.majiq out_micol/ROB2_S2Aligned.sortedByCoord.out.majiq out_micol/ROB1_S1Aligned.sortedByCoord.out.majiq -grp2 out_micol/LB_S10Aligned.sortedByCoord.out.majiq out_micol/SIA7_S11Aligned.sortedByCoord.out.majiq out_micol/C5_S9Aligned.sortedByCoord.out.majiq out_micol/C1_S7Aligned.sortedByCoord.out.majiq out_micol/C2_S8Aligned.sortedByCoord.out.majiq
 
 ```
