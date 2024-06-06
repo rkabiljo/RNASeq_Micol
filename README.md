@@ -57,7 +57,7 @@ samtools index "$bam_file"
 
 ## Run Majiq with STAR output
 
-Prepare the settings file
+Prepare the settings file and copy the star aligned bam files to one directory - they have to be all in one directory
 ```
  #cat settings_micol.ini 
 [info]
@@ -70,6 +70,17 @@ case=EVELINA_S6Aligned.sortedByCoord.out,FRANCE_S5Aligned.sortedByCoord.out,BRIS
 control=LB_S10Aligned.sortedByCoord.out,SIA7_S11Aligned.sortedByCoord.out,C5_S9Aligned.sortedByCoord.out,C1_S7Aligned.sortedByCoord.out,C2_S8Aligned.sortedByCoord.out
 ```
 #  Run
+prepare the environment
+```
+module purge
+module load default-modules
+module load beta-modules
+module unload gcc-libs
+module load python/3.9.6-gnu-10.2.0
+source majiq/bin/activate
+cd majiq
+```
+run
 ```
 #build
 majiq build -c settings_micol.ini /home/skgtrk2/Scratch/mito/RNASeq/Ref/Homo_sapiens.GRCh38.111.NDUFA4_NDUFA4L2.gff3 -o out_micol -j 1
@@ -83,6 +94,13 @@ ssh -v -L localhost:8080:localhost:35400 skgtrk2@kathleen.rc.ucl.ac.uk
 ```
 Then prepare the environment in the same was as when I ran build and deltapsi
 ```
+module purge
+module load default-modules
+module load beta-modules
+module unload gcc-libs
+module load python/3.9.6-gnu-10.2.0
+source majiq/bin/activate
+cd majiq
 ```
 Run voila
 ```
