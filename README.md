@@ -142,6 +142,21 @@ Then in a safari, on a laptop open http://localhost:8080, and it opens the voila
 
 
 
-```
 
-## Run Salmon directly from TrimGalore output
+# Run Salmon directly from TrimGalore output
+
+runSalmon.sh will find all paired fastqs in the same directory (where trimGalore has written the trimmed files) and run salmon on them.
+The command
+```
+   salmon quant -i /home/skgtrk2/Scratch/mito/RNASeq/Ref/salmon_index \
+        -l A \
+        -1 $r1_file \
+        -2 $r2_file \
+        --seqBias \
+        --gcBias \
+        --useVBOpt \
+        --validateMappings \
+        -p 10 \
+        -o "quant_micol/$output_dir"
+done
+```
