@@ -54,6 +54,18 @@ samtools index "$bam_file"
  done
 ```
 ## Counts with HTSeq
+```
+#submit automatically if all are in the same directory - I copied them previously and indexed them
+for bam_file in star_micol/*.bam; do
+  echo "Submitting job for $bam_file..."
+  qsub runHTseq.sh "$bam_file"
+done
+```
+The actual command from runHTseq.sh
+```
+python -m HTSeq.scripts.count -f bam -s no -r pos -t exon -i gene_id "$bam_file" Ref/Homo_sapiens.GRCh38.111.gtf > counts_micol/"$base_name".htseq.cnt
+
+```
 
 ## Run Majiq with STAR output
 
