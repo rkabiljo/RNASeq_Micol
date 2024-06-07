@@ -1,6 +1,9 @@
 # RNASeq_COXFA4
 
-## Files are here on RDS
+Files are here on RDS
+```
+/mnt/gpfs/live/rd01__/ritd-ag-project-rd01is-rdspi25/RNASeq/COXFA4
+```
 
 ## Run FastQC on one to see if there is adapter content
 ```
