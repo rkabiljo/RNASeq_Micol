@@ -69,6 +69,14 @@ The actual command from runHTseq.sh
 python -m HTSeq.scripts.count -f bam -s no -r pos -t exon -i gene_id "$bam_file" Ref/Homo_sapiens.GRCh38.111.gtf > counts_micol/"$base_name".htseq.cnt
 
 ```
+After running HTSeq, merge all counts in one gene expression matrix
+```
+#in the RNASeq dir
+perl merge.pl 0 1 htseq.cnt counts_micol > merged_cellular.txt
+#remove ends of file names
+sed -i 's/Aligned\.sortedByCoord\.out\.htseq//g' merged_cellular.txt
+```
+
 
 ## Run Majiq with STAR output
 
