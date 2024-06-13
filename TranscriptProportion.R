@@ -77,5 +77,12 @@ geneID<-"ENSG00000189043.10"
 plotProportions(d2, geneID, "condition",plot_type = "boxplot1")
 plotProportions(d2, "ENSG00000185633.11", "condition",plot_type = "boxplot1")
 
+#try with plotting individual samples, not groups
+plotProportions(d2, geneID, "sample_id",plot_type = "boxplot1",order_samples=TRUE)
+plotProportions(d2, geneID, "sample_id",plot_type = "boxplot1",order_samples=FALSE)
+plotProportions(d2, geneID, "sample_id",plot_type = "boxplot1",order_samples=FALSE,plot_fit=FALSE)
+plotProportions(d2, geneID, "sample_id",plot_type = "boxplot2",order_samples=FALSE,plot_fit=FALSE)
+plotProportions(d2, geneID, "sample_id",plot_type = "lineplot",order_samples=FALSE,plot_fit=FALSE)
+
 
 
