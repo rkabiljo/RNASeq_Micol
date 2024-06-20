@@ -1,1 +1,88 @@
+# Arrays have been loaded into GenomeStudio
+
+For that I downloaded from Illunia website
+1.Actual GenomeStudio app (needs regstration)
+2.Manifest file - when extracted it was called GDA-8v1-0_D1.bpm, which did not match the name from xls we received, but the link matched the name.  It worked.
+3.Cluster file
+4.Plink plug in to export data to Plink
+
+In GenomeStudio, I right clicked each one to update the call rate, and it went from red to 0.99+ for each sample. The eight sample failed.
+
+I exported the seven samples as PLINK, clicking to export only non zeroed SNPs.
+
+# PLINK
+I started with files: .map, .ped, and .phenotype
+
+On my own laptop:
+```
+./plink --file Micol --make-bed --out Micol_binary
+```
+log file:
+```
+PLINK v1.90b6.12 64-bit (28 Oct 2019)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to Micol_binary.log.
+Options in effect:
+  --file Micol
+  --make-bed
+  --out Micol_binary
+
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (1894665 variants, 7 people).
+--file: Micol_binary-temporary.bed + Micol_binary-temporary.bim +
+Micol_binary-temporary.fam written.
+1894665 variants loaded from .bim file.
+7 people (3 males, 4 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 7 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 8 het. haploid genotypes present (see Micol_binary.hh ); many commands
+treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.996585.
+1894665 variants and 7 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to Micol_binary.bed + Micol_binary.bim + Micol_binary.fam ... done.
+```
+#  filter SNPs
+./plink --bfile Micol_binary --maf 0.05 --geno 0.1 --hwe 1e-6 --make-bed --out filtered_data
+logfile
+```
+PLINK v1.90b6.12 64-bit (28 Oct 2019)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to filtered_data.log.
+Options in effect:
+  --bfile Micol_binary
+  --geno 0.1
+  --hwe 1e-6
+  --maf 0.05
+  --make-bed
+  --out filtered_data
+
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+1894665 variants loaded from .bim file.
+7 people (3 males, 4 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 7 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 8 het. haploid genotypes present (see filtered_data.hh ); many
+commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.996585.
+33644 variants removed due to missing genotype data (--geno).
+Warning: --hwe observation counts vary by more than 10%, due to the X
+chromosome.  You may want to use a less stringent --hwe p-value threshold for X
+chromosome variants.
+--hwe: 0 variants removed due to Hardy-Weinberg exact test.
+1238955 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+622066 variants and 7 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to filtered_data.bed + filtered_data.bim + filtered_data.fam ...
+done.
+```
+
 
