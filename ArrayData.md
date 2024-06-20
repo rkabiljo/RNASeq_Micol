@@ -50,8 +50,7 @@ Note: No phenotypes present.
 ```
 ./plink --bfile Micol_binary --maf 0.05 --geno 0.1 --hwe 1e-6 --make-bed --out filtered_data
 ```
-<br>
-logfile
+<br> logfile
 ```
 PLINK v1.90b6.12 64-bit (28 Oct 2019)          www.cog-genomics.org/plink/1.9/
 (C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
