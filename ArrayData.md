@@ -47,7 +47,9 @@ Note: No phenotypes present.
 --make-bed to Micol_binary.bed + Micol_binary.bim + Micol_binary.fam ... done.
 ```
 #  filter SNPs
+```
 ./plink --bfile Micol_binary --maf 0.05 --geno 0.1 --hwe 1e-6 --make-bed --out filtered_data
+```
 <br>
 logfile
 ```
