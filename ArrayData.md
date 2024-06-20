@@ -1,12 +1,12 @@
-# Arrays have been loaded into GenomeStudio
+# Load arrays into GenomeStudio
 
-For that I downloaded from Illunia website
+For that I downloaded from Illumina website
 <br>1.Actual GenomeStudio app (needs regstration)
 <br>2.Manifest file - when extracted it was called GDA-8v1-0_D1.bpm, which did not match the name from xls we received, but the link matched the name.  It worked.
 <br>3.Cluster file
 <br>4.Plink plug in to export data to Plink
 
-<br>In GenomeStudio, I right clicked each one to update the call rate, and it went from red to 0.99+ for each sample. The eight sample failed.
+<br>In GenomeStudio, I right clicked each one to update the call rate, and it went from red to 0.99+ for each sample. The eight sample failed, it was a dummy.
 
 I exported the seven samples as PLINK, clicking to export only non zeroed SNPs.
 
