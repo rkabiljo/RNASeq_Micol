@@ -48,6 +48,7 @@ Note: No phenotypes present.
 ```
 #  filter SNPs
 ./plink --bfile Micol_binary --maf 0.05 --geno 0.1 --hwe 1e-6 --make-bed --out filtered_data
+<br>
 logfile
 ```
 PLINK v1.90b6.12 64-bit (28 Oct 2019)          www.cog-genomics.org/plink/1.9/
@@ -84,5 +85,69 @@ Note: No phenotypes present.
 --make-bed to filtered_data.bed + filtered_data.bim + filtered_data.fam ...
 done.
 ```
+# calculate regions of homozygosity
+```
+./plink --bfile filtered_data --homozyg --homozyg-window-snp 50 --homozyg-window-het 1 --homozyg-window-missing 5 --homozyg-kb 1000 --homozyg-density 50 --out roh_output
+```
+<br>logfile
+```
+PLINK v1.90b6.12 64-bit (28 Oct 2019)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to roh_output.log.
+Options in effect:
+  --bfile filtered_data
+  --homozyg
+  --homozyg-density 50
+  --homozyg-kb 1000
+  --homozyg-window-het 1
+  --homozyg-window-missing 5
+  --homozyg-window-snp 50
+  --out roh_output
 
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+622066 variants loaded from .bim file.
+7 people (3 males, 4 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 7 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 3 het. haploid genotypes present (see roh_output.hh ); many commands
+treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+622066 variants and 7 people pass filters and QC.
+Note: No phenotypes present.
+--homozyg: Scan complete, found 156 ROH.
+Results saved to roh_output.hom + roh_output.hom.indiv + roh_output.hom.summary
+```
+# Calculate relatedness from regions of homozygosity
+```
+./plink --bfile filtered_data --genome --min 0.05 --out relatedness_output
+```
+<br>logfile
+```
+PLINK v1.90b6.12 64-bit (28 Oct 2019)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to relatedness_output.log.
+Options in effect:
+  --bfile filtered_data
+  --genome
+  --min 0.05
+  --out relatedness_output
+
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+622066 variants loaded from .bim file.
+7 people (3 males, 4 females) loaded from .fam.
+Using up to 8 threads (change this with --threads).
+Before main variant filters, 7 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 3 het. haploid genotypes present (see relatedness_output.hh ); many
+commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+622066 variants and 7 people pass filters and QC.
+Note: No phenotypes present.
+Excluding 21197 variants on non-autosomes from IBD calculation.
+IBD calculations complete.  
+Finished writing relatedness_output.genome .
+```
 
