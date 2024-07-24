@@ -152,3 +152,12 @@ IBD calculations complete.
 Finished writing relatedness_output.genome .
 ```
 
+# Calculate Relatedness using king
+```
+cd /home/skgtrk2/Scratch/mito/RNASeq/array
+./king -b filtered_data.bed --related
+```
+results are in
+```
+less king.kin0
+```
