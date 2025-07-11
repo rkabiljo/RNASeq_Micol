@@ -45,3 +45,16 @@ STAR --runThreadN 8 \
 
 
 ```
+
+### Run STAR
+```
+ nohup STAR \
+   --runThreadN 8 \
+   --genomeDir genome \
+   --readFilesIn LRM122_R1.fastp.trimmed.fastq.gz LRM122_R2.fastp.trimmed.fastq.gz \
+   --readFilesCommand zcat \
+   --outFileNamePrefix LRM122_ \
+   --outSAMtype BAM SortedByCoordinate \
+   --quantMode GeneCounts \
+   > LRM122_star.log 2>&1 &
+```
