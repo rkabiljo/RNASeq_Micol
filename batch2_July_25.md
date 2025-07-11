@@ -58,3 +58,7 @@ STAR --runThreadN 8 \
    --quantMode GeneCounts \
    > LRM122_star.log 2>&1 &
 ```
+Index the result file:
+```
+samtools index LRM122_Aligned.sortedByCoord.out.bam
+```
