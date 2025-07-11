@@ -33,3 +33,15 @@ fastp \
 ```
 fastqc LRM122_R1.fastp.trimmed.fastq.gz LRM122_R2.fastp.trimmed.fastq.gz -o fastqc1
 ```
+
+### Create index for STAR
+```
+STAR --runThreadN 8 \
+      --runMode genomeGenerate \
+      --genomeDir genome \
+     --genomeFastaFiles ../RNA_PacBio/Ref/Homo_sapiens.GRCh38.dna.primary_assembly.fa \
+     --sjdbGTFfile ../RNA_PacBio/Ref/Homo_sapiens.GRCh38.111.gtf \
+    --sjdbOverhang 149
+
+
+```
