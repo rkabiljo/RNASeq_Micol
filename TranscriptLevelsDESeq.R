@@ -6,12 +6,12 @@
  [1] "BRISTOL" "C1"      "C2"      "C5"      "EVELINA" "FRANCE"  "LB"      "ROB1"    "ROB2"   
 [10] "SIA7"    "TURKEY" 
  sampleTable<-data.frame(
-+ row.names=colnames(txiTranscripts$counts),
-+ condition=samps2$condition
-+ )
-> dds<-DESeqDataSetFromTximport(txiTranscripts,colData = sampleTable,design = ~condition)
+ row.names=colnames(txiTranscripts$counts),
+ condition=samps$condition
+ )
+ dds<-DESeqDataSetFromTximport(txiTranscripts,colData = sampleTable,design = ~condition)
 using just counts from tximport
-> dds
+ dds
 class: DESeqDataSet 
 dim: 252048 11 
 metadata(1): version
